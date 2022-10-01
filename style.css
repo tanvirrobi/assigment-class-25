@@ -1,0 +1,133 @@
+.pricing-tabel-items{}
+ 
+.pricing-tabel-items .pricing-item {
+    transition: .5s;
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.pricing-tabel-items .pricing-item::after{
+    content: "";
+    top: -200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(216, 112, 147, 0.425);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+.pricing-tabel-items .pricing-item:hover{
+    background-color:#0d6dfdc5; 
+    color: #fff;
+}
+.pricing-tabel-items .pricing-item:hover .s-item{
+    background-color:#fd0dfdc5; 
+    color: #fff;
+    box-shadow: 0px 0px 8px 1px;
+}
+
+.pricing-tabel-items .pricing-item h3 {
+    font-weight: 500;
+    font-size: 22px;
+    opacity: .8;
+}
+.pricing-tabel-items .pricing-item h1 {
+    padding-bottom: 85px;
+    position: relative;
+}
+.pricing-tabel-items .pricing-item h1::after {
+    content: "";
+    position: absolute;
+    width: 118px;
+    height: 2px;
+    left: 0;
+    top: 81%;
+    right: 0;
+    margin: auto;
+    background-color: #ddd;
+}
+
+
+
+.pricing-tabel-items .pricing-item li {
+    list-style: none;
+    opacity: .8;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+.pricing-tabel-items .pricing-item p {
+    padding: 0px 28px;
+    opacity: .9;
+}
+.pricing-tabel-items .pricing-item a{}
+
+
+/* pricing-silder-content */
+.pricing-slider-section{
+    background: url(./img/free-bg.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.pricing-slider-section::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #3d64dabb;
+    z-index: -1;
+}
+
+
+
+.pricing-silder-content {
+    width: 50%;
+    margin: auto;
+    padding: 200px 0px;
+}
+.pricing-silder-content h5 {
+    font-size: 15px;
+    font-weight: 400;
+    opacity: .8;
+}
+.pricing-silder-content h1 {
+    font-weight: 400;
+    font-size: 35px;
+    padding: 0px 34px;
+    margin-bottom: 33px;
+}
+.pricing-silder-content p {
+    padding: 20px 33px;
+}
+.pricing-silder-content a{
+    z-index: 1;
+}
+
+
+/* News-letter-section */
+
+.news-letter-title p {
+    padding-right: 527px;
+    font-size: 17px;
+}
+
+
+.news-letter-right {
+    width: 90%;
+    padding: 20px 25px;
+    font-size: 15px;
+}
+.news-letter-right p {
+    margin-bottom: 90px;
+    line-height: 27px;
+    font-weight: 600;
+    font-size: 25px;
+    opacity: .9;
+}
+.news-letter-right a.btn{}
